@@ -2,6 +2,7 @@ import { defineFeature, loadFeature } from "jest-cucumber";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import Home from "../../../src/Home";
+import React from "react";
 
 const feature = loadFeature("__tests__/integration/features/home.feature");
 
