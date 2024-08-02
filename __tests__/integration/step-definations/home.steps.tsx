@@ -1,7 +1,7 @@
 import { defineFeature, loadFeature } from "jest-cucumber";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
-import App from "../../../src/App";
+import Home from "../../../src/Home";
 
 const feature = loadFeature("__tests__/integration/features/home.feature");
 
@@ -11,11 +11,11 @@ defineFeature(feature, (test) => {
     then,
   }) => {
     given("I am on the home page", () => {
-      render(<App />);
+      render(<Home />);
     });
 
-    then('I should see the title "Home Page Title"', () => {
-      expect(screen.getByText("Vite + React")).toBeInTheDocument();
+    then('I should see the title "Dashboard"', () => {
+      expect(screen.getByText("Dashboard")).toBeInTheDocument();
     });
   });
 });
