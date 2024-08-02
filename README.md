@@ -166,5 +166,5 @@ Ran all test suites.
 For further information, consult the documentation of the respective libraries:
 
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
-- [`jest-cucumber` Documentation](https://github.com/jest-community/jest-cucumber)
+- [`jest-cucumber` Documentation](https://github.com/bencompton/jest-cucumber#readme)
 - [React Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro)
