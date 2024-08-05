@@ -1,0 +1,19 @@
+{
+    "jsc": {
+      "parser": {
+        "syntax": "typescript",
+        "tsx": true
+      },
+      "transform": {
+        "react": {
+          "runtime": "automatic"  // Enables the new JSX transform
+        }
+      }
+    },
+    "module": {
+      "type": "es6",
+      "strict": true,
+      "strictMode": true
+    }
+  }
+  

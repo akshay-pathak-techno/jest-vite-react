@@ -33,7 +33,7 @@ const config = {
     "/src/context/",
   ],
   transform: {
-    "^.+\\.tsx?$": "babel-jest",
+    "^.+\\.tsx?$": "@swc/jest",
   },
 };
 
