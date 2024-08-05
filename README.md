@@ -142,6 +142,7 @@ To run the tests, use the following commands:
 
 - **Run All Tests**: `npm test`
 - **Run Tests with Coverage**: `npm run test:cov`
+- **Run a Single Test**: `npx jest --testPathPattern="__tests__/integration/step-definitions/home.steps.tsx"`
 
 ## Test Results
 
