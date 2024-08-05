@@ -5,6 +5,7 @@ import { render, screen, act } from "@testing-library/react";
 import Home from "../../../src/Home";
 import { Provider, useSetAtom } from "jotai";
 import { userAtom } from "../../../src/store";
+import { UserRoleProvider } from "../../../src/context/UserRoleContext";
 
 jest.useFakeTimers(); // Use fake timers globally
 
@@ -44,7 +45,9 @@ defineFeature(feature, (test) => {
         <InitialStateProvider initialValues={[[userAtom, {
           name:"John Doe"
         }]]} >
+          <UserRoleProvider initialRole="user">
           <Home />
+          </UserRoleProvider>
         </InitialStateProvider>,
       );
     });
@@ -55,7 +58,7 @@ defineFeature(feature, (test) => {
       });
       expect(screen.getByText("Dashboard")).toBeInTheDocument();
       expect(screen.getByText("John Doe")).toBeInTheDocument();
-
+      expect(screen.getByTestId("user-role")).toHaveTextContent('user');
     });
   });
   afterEach(() => {
