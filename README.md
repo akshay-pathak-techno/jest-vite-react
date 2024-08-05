@@ -96,16 +96,12 @@ Here's the project directory structure:
 ```
 babel.config.cjs
 ├── coverage
-│   ├── clover.xml
-│   ├── coverage-final.json
-│   ├── lcov.info
 │   └── lcov-report
 ├── index.html
 ├── jest.config.js
 ├── __mocks__
 │   └── fileMock.js
 ├── package.json
-├── package-lock.json
 ├── postcss.config.js
 ├── public
 │   └── vite.svg
@@ -113,13 +109,10 @@ babel.config.cjs
 ├── setup-test.ts
 ├── src
 │   ├── assets
-│   │   └── react.svg
 │   ├── Home.tsx
-│   ├── index.css
 │   ├── LoginForm.tsx
 │   ├── main.tsx
 │   ├── Users.tsx
-│   └── vite-env.d.ts
 ├── tailwind.config.js
 ├── __tests__
 │   └── integration
